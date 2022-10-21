@@ -11,6 +11,7 @@
 
 body {
     background-color: RGB(26, 24, 25);
+    background-color: black;
 }
 
 header {
@@ -20,6 +21,7 @@ header {
     background-color: rgba(0, 0, 0, 0.6);
     box-shadow: 0px 0px 15px white;
     position: fixed;
+    z-index: 100;
     width: 100vw;
 }
 
@@ -39,8 +41,8 @@ header {
     font-size: 24px;
 }
 
-.banner {
-    background-image: url(../image/1221312.jpg);
+
+.banner, .banner2 {
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -49,6 +51,17 @@ header {
     border-bottom: solid 2px silver;
     position: relative;
     z-index: -10;
+}
+
+.banner {
+    background-image: url(../image/1221312.jpg);
+}
+
+.banner2 {
+    background-image: url(../image/1221301.jpg);
+    height: 50vh;
+    background-size: contain;
+    background-position: center;
 }
 
 .banner div {
@@ -88,7 +101,7 @@ header {
     color: white;
     text-align: center;
     font-size: 1.4rem;
-    text-transform: uppercase;
+    text-decoration: underline;
     margin-top: .6rem;
 }
 
@@ -99,18 +112,24 @@ header {
     padding: 0.5rem;
     border-bottom: 2px solid silver;
     background-color: RGB(26, 24, 25);
+    background-color: black;
+    
 }
 
-.testimonialImage {
-    height: 125px;
-    width: 125px;
+.drinksPhoto {
+    height: 250px;
+    width: 300px;
     margin: 0.5rem;
-    object-position: 0 1.4rem;
-    border-radius: 50%;
     object-fit: cover;
     overflow: hidden;
-    background-color: rgba(255, 255, 255, 0.94);
     box-shadow: 0px 0px 4px silver;
+    transition: .8s ease-in-out;
+    filter: brightness(1.2);
+}
+
+.drinksPhoto:hover {
+    filter: brightness(1.6);
+    transform: scale(1.03);
 }
 
 .testimonialText {
@@ -122,15 +141,20 @@ header {
 
 .businessHour {
     background-color: RGB(26, 24, 25);
+    background-color: black;
     color: white;
 }
 
-.businessHour p {
-    text-transform: uppercase;
+.businessTitle {
     text-align: center;
     padding: .6rem 0 .8rem 0;
     font-size: 1.4rem;
     text-decoration: underline;
+}
+
+.businessInfo {
+    text-align: center;
+    font-size: 1rem;
 }
 
 table {
@@ -157,6 +181,17 @@ th, td {
     justify-content: center;
     padding: 2rem 0rem;
     background-color: RGB(26, 24, 25);
+    
+    background-color: black;
+}
+
+.je {
+    background: url(../image/peaky-blinders-seeklogo.com-3.svg);
+    background-size: 150px;
+    background-position: center;
+    background-color: rgba(245, 222, 179, 0.703);
+    height: 150px;
+    width: 100%;
 }
 
 .mapa p {
@@ -178,6 +213,7 @@ th, td {
     justify-content: space-around;
     align-items: center;
     background-color: RGB(26, 24, 25);
+    background-color: black;
 }
 
 .footerNav {
