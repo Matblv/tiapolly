@@ -1,0 +1,336 @@
+/* font-family: 'Source Serif 4', serif; 300-500-700 */
+/* @import url('https://fonts.googleapis.com/css2?family=Karla:wght@200;300;500;700&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,300;8..60,400;8..60,500;8..60,700&display=swap');
+
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Source Serif 4', serif;
+}
+
+body {
+    background-color: RGB(26, 24, 25);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    height: 3.4rem;
+    background-color: rgba(0, 0, 0, 0.6);
+    box-shadow: 0px 0px 15px white;
+    position: fixed;
+    width: 100vw;
+}
+
+.headerHome {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.headerTitle {
+    padding: .6rem;
+    text-transform: uppercase;
+    color: white;
+    font-weight: 500;
+    transition:  2s ease-in;
+    font-size: 24px;
+}
+
+.banner {
+    background-image: url(../image/1221312.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
+    overflow: hidden;
+    border-bottom: solid 2px silver;
+    position: relative;
+    z-index: -10;
+}
+
+.banner div {
+    background-color: rgba(0, 0, 0, .8);
+    position: absolute;
+    top: calc(50%);
+    top: calc(50% - 60px);
+    left: -5vw;
+    width: 110vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 300;
+}
+
+.banner div p {
+    color: white;
+    text-align: center;
+    font-size: 40px;
+    max-width: 94vw;
+}
+
+.bannerImg {
+    width: 100%;
+    height: 12rem;
+    object-fit: cover;
+    scale: 1.6;
+    position: relative;
+    z-index: -10;
+}
+
+#welc p {
+    opacity: 0;
+}
+
+.testimonialTitle {
+    color: white;
+    text-align: center;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    margin-top: .6rem;
+}
+
+.testimonialContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.5rem;
+    border-bottom: 2px solid silver;
+    background-color: RGB(26, 24, 25);
+}
+
+.testimonialImage {
+    height: 125px;
+    width: 125px;
+    margin: 0.5rem;
+    object-position: 0 1.4rem;
+    border-radius: 50%;
+    object-fit: cover;
+    overflow: hidden;
+    background-color: rgba(255, 255, 255, 0.94);
+    box-shadow: 0px 0px 4px silver;
+}
+
+.testimonialText {
+    margin: 0.5rem;
+    text-align: center;
+    font-weight: 300;
+    color: white;
+}
+
+.businessHour {
+    background-color: RGB(26, 24, 25);
+    color: white;
+}
+
+.businessHour p {
+    text-transform: uppercase;
+    text-align: center;
+    padding: .6rem 0 .8rem 0;
+    font-size: 1.4rem;
+    text-decoration: underline;
+}
+
+table {
+    display: flex;
+    justify-content: space-around;
+    font-weight: 300;
+    font-size: 15px;
+}
+
+tr {
+    display: flex;
+    flex-direction: column;
+} 
+
+th, td {
+    margin: .2rem;
+    text-align: center;
+}
+
+.mapa {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 0rem;
+    background-color: RGB(26, 24, 25);
+}
+
+.mapa p {
+    color: white;
+    padding: 1rem 0;
+    font-size: 1.1rem;
+    font-weight: 300;
+    text-decoration: underline;
+}
+
+.bigMap {
+    display: none;
+}
+
+.footer {
+    height: 6rem;
+    border-top: 1px solid silver;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: RGB(26, 24, 25);
+}
+
+.footerNav {
+    display: none;
+}
+
+.footerRedes {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.footerRedes div a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.05rem;
+    font-weight: 300;
+    transition: all 2s;
+    
+}
+
+.footerRedes div a:hover {
+    text-decoration-line: underline;
+}
+
+.footerRedes a {
+    margin: 0% 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgRedes {
+    height: 30px;
+}
+
+
+
+@media screen and (min-width: 649px) {
+    .banner div p {
+        font-size: 45px;
+        max-width: none;
+    }
+
+    .testimonialText {
+        max-width: 400px;
+    }
+
+    .footer {
+        justify-content: space-between;
+    }
+
+    .footerRedes {
+        max-width: 50%;
+    }
+
+    .footerNav {
+        display: block;
+        padding-left: 10%;
+    }
+
+    .footerNav ul {
+        display: flex;
+    }
+
+    .footerNav li {
+        list-style: none;
+        color: white;
+        text-align: left;
+        width: 100px;
+        margin: .4rem 0;
+    }
+
+    .footerNav li::before {
+        content: "";
+        display: inline-block;
+        margin-right: 5px;
+        height: 15px;
+        width: 2px;
+        background-color: white;
+    }
+
+    .footerNav a {
+        text-decoration: none;
+        color: white;
+        font-weight: 300;
+    }
+
+    .footerNav a:hover {
+        text-decoration: underline;
+    }
+}
+
+@media screen and (min-width: 1023px) {
+    .headerTitle {
+        padding-left: 1rem;
+        font-size: 2.5rem;
+    }
+
+    .testimonial {
+        display: flex;
+        justify-content: space-around;
+        padding: 2rem 0 0 0;
+    }
+
+    .testimonialTitle {
+        font-size: 1.6rem;
+    }
+    
+    .testimonialText {
+        font-size: 1.05rem;
+        max-width: 425px;
+    }
+
+    .businessHour {
+        padding: 3rem 0 0 0;
+    }
+
+    .businessHour p {
+        /* padding: 1rem; */
+        font-size: 1.6rem;
+    }
+
+    table {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 18px;
+        overflow: scroll;
+    }
+
+    td, th {
+        min-width: 165px;
+        max-width: 165px;
+        text-align: center;
+
+    }
+
+    tr {
+        flex-direction: row;
+    }
+
+    .mapa {
+        padding: 3rem 0 2rem 0;
+    }
+
+    .bigMap {
+        display: block;
+    }
+
+    .smallMap {
+        display: none;
+    }
+}
