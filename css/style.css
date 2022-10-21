@@ -19,7 +19,7 @@ header {
     justify-content: space-between;
     height: 3.4rem;
     background-color: rgba(0, 0, 0, 0.6);
-    box-shadow: 0px 0px 15px white;
+    box-shadow: 0px 0px 15px wheat;
     position: fixed;
     z-index: 100;
     width: 100vw;
@@ -37,10 +37,8 @@ header {
     text-transform: uppercase;
     color: white;
     font-weight: 500;
-    transition:  2s ease-in;
     font-size: 24px;
 }
-
 
 .banner, .banner2 {
     background-size: cover;
@@ -59,8 +57,16 @@ header {
 
 .banner2 {
     background-image: url(../image/1221301.jpg);
-    height: 50vh;
+    height: 30vh;
     background-size: contain;
+    background-repeat: repeat-y;
+    background-position: center;
+    filter: saturate(1.5);
+}
+
+.banner3 {
+    background-image: url(../image/peaky-blinders-seeklogo.com-3.svg);
+    background-repeat: repeat-x;
     background-position: center;
 }
 
@@ -77,10 +83,10 @@ header {
     z-index: 300;
 }
 
-.banner div p {
+.banner p {
     color: white;
     text-align: center;
-    font-size: 40px;
+    font-size: 30px;
     max-width: 94vw;
 }
 
@@ -102,7 +108,11 @@ header {
     text-align: center;
     font-size: 1.4rem;
     text-decoration: underline;
-    margin-top: .6rem;
+    margin-top: 2rem;
+}
+
+.testimonial {
+    margin: 2rem 0 2rem 0;
 }
 
 .testimonialContainer {
@@ -132,6 +142,10 @@ header {
     transform: scale(1.03);
 }
 
+#drink3 {
+    object-position: 0 -45px;
+}
+
 .testimonialText {
     margin: 0.5rem;
     text-align: center;
@@ -147,7 +161,7 @@ header {
 
 .businessTitle {
     text-align: center;
-    padding: .6rem 0 .8rem 0;
+    padding: .2rem 0 .8rem 0;
     font-size: 1.4rem;
     text-decoration: underline;
 }
@@ -179,18 +193,18 @@ th, td {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 2rem 0rem;
+    padding: 1rem 0rem;
     background-color: RGB(26, 24, 25);
     
     background-color: black;
 }
 
-.je {
+.bannerFooter {
     background: url(../image/peaky-blinders-seeklogo.com-3.svg);
-    background-size: 150px;
+    background-size: 100px;
     background-position: center;
     background-color: rgba(245, 222, 179, 0.703);
-    height: 150px;
+    height: 110px;
     width: 100%;
 }
 
@@ -260,6 +274,10 @@ th, td {
         max-width: none;
     }
 
+    .banner2 {
+        background-size: cover;
+    }
+
     .testimonialText {
         max-width: 400px;
     }
@@ -318,7 +336,7 @@ th, td {
     .testimonial {
         display: flex;
         justify-content: space-around;
-        padding: 2rem 0 0 0;
+        margin: 2rem 0 2rem 0;
     }
 
     .testimonialTitle {
@@ -331,7 +349,7 @@ th, td {
     }
 
     .businessHour {
-        padding: 3rem 0 0 0;
+        padding: 1rem 0 0 0;
     }
 
     .businessHour p {
