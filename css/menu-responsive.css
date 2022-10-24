@@ -132,7 +132,7 @@ nav {
 
     .enlaces-menu li {
         padding: 1% 10px;
-        width: 7.6rem;
+        width: 7rem;
     }
 
     .enlaces-menu li a {
@@ -144,6 +144,6 @@ nav {
 @media screen and (min-width: 1023px){
     .enlaces-menu li {
         padding: 2% 30px;
-        width: 10rem;
+        width: 8.5rem;
     }
 }
